@@ -5,8 +5,12 @@ import {SlUser} from "react-icons/sl";
 import {useNavbarType} from "../../stores/App/hooks.ts";
 import NavbarMenu from "./menu";
 import {NAVBAR_MENU} from "../../utils/consts/navbar.ts";
+/*import {getLanguageName} from "../../utils/consts/appearance.tsx";*/
+
+
 function Navbar() {
     const type = useNavbarType()
+
     return (
         <header className="header">
             <div className="container">

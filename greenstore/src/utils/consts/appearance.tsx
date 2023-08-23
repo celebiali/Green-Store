@@ -4,10 +4,6 @@ export const languages = [
         value: 'Türkçe'
     },
     {
-        key: 'az',
-        value: 'Azərbaycan dili'
-    },
-    {
         key: 'en',
         value: 'English'
     }

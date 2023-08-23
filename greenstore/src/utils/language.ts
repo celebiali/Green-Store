@@ -8,9 +8,8 @@ i18n
     .use(Backend)
     .use(initReactI18next)
     .init({
-        supportedLngs: ['tr','en','az'],
-        /* varsayılan */
-        fallbackLng: 'az'
+        supportedLngs: ['tr','en'],
+        fallbackLng: 'tr'
     })
 
 export {

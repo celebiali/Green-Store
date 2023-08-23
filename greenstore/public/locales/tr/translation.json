@@ -3,5 +3,11 @@
     "default": "Sistem",
     "dark": "Koyu",
     "light": "Açık"
+  },
+  "navbar": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "plants": "Bitkiler",
+    "contact": "İletişim"
   }
 }

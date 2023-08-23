@@ -1,7 +1,7 @@
 export const NAVBAR_MENU = [
     {
         path: '/',
-        title: 'Anasayfa'
+        title: 'Home'
     },
     {
         path: '/about',

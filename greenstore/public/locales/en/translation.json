@@ -3,5 +3,11 @@
     "default": "System",
     "dark": "Dark",
     "light": "Light"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "plants": "Plants",
+    "contact": "Contact"
   }
 }
