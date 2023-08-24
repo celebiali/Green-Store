@@ -1,14 +1,16 @@
 import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
 
 
 function Contact() {
+    const {t} = useTranslation()
+
     return (
         <div>
         <Helmet>
-            <title>Contact</title>
-            <meta name="description" content="Bu sayfa ana sayfadır." />
+            <title> {t('navbar.contact')}</title>
         </Helmet>
-        <div>Contact</div>
+            <div>{t('navbar.contact')}</div>
     </div>
     )
 }

@@ -1,14 +1,15 @@
 import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
 
 function Plants() {
+    const {t} = useTranslation()
     return (
         <div>
             <Helmet>
-                <title>Plants</title>
-                <meta name="description" content="Bu sayfa ana sayfadır." />
+                <title>{t('navbar.plants')}</title>
             </Helmet>
-            <div>Plants</div>
+            <div>{t('navbar.plants')}</div>
         </div>
-    );
+    )
 }
 export default Plants;

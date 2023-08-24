@@ -7,13 +7,23 @@
     justify-content: space-between;
     padding: 30px;
     border-bottom: 1px solid #e5dddd;
+    img {
+      width: 20px;
+      height: 20px;
+      border: 20px;
+    }
   }
-  .icons {
+  .menu {
       display: flex;
       justify-content: space-between;
     a {
       padding-right: 20px;
       background-color: white;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

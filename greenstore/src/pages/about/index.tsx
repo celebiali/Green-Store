@@ -1,13 +1,15 @@
 import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
 
 function About() {
+    const {t} = useTranslation()
+
     return (
         <div>
             <Helmet>
-                <title>About</title>
-                <meta name="description" content="Bu sayfa ana sayfadır." />
+                <title> {t('navbar.about')}</title>
             </Helmet>
-            <div>About</div>
+            <div>{t('navbar.about')}</div>
         </div>
     );
 }

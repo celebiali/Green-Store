@@ -1,18 +1,31 @@
 export const NAVBAR_MENU = [
     {
         path: '/',
-        title: 'Home'
+        title: {
+            en: 'Home',
+            tr: 'Ana Sayfa',
+        }
     },
     {
         path: '/about',
-        title: 'About'
+        title: {
+            en: 'About',
+            tr: 'Hakkında',
+        }
     },
     {
         path: '/contact',
-        title: 'Contact'
+        title: {
+            en: 'Contact',
+            tr: 'İletişim',
+        }
+
     },
     {
         path: '/plants',
-        title: 'Plants'
+        title: {
+            en: 'Plants',
+            tr: 'Bitkiler',
+        }
     },
 ]
