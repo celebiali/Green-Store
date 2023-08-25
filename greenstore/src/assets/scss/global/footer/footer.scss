@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .navbar-menu {
+    padding-top: 30px;
+    a {
+      padding-right: 20px;
+    }
+  }
+  .section {
+    button {
+      margin-left: 10px;
+    }
+  }
+  .footer_end {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 4rem;
+  }
+}
