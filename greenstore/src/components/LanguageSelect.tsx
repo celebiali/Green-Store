@@ -1,3 +1,4 @@
+import {languages} from "../utils/consts/appearance.tsx";
 
 const LanguageSelect = ({ languages, i18n }) => {
     return (
@@ -16,3 +17,4 @@ const LanguageSelect = ({ languages, i18n }) => {
 };
 
 export default LanguageSelect;
+    
