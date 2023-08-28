@@ -1,0 +1,30 @@
+.product-section {
+  width: 18rem;
+  height: 27rem;
+  background-color: gray;
+  .img {
+    width: 18rem;
+    height: 20rem;
+    background-color: gray;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1px;
+    margin-top: 4px;
+    border: 1px solid red;
+    height: calc(7rem - 4px);
+    .star {
+      padding: 3px 0 3px 0;
+    }
+    .title {
+      padding: 3px 0 3px 0;
+    }
+    .brand {
+      padding: 3px 0 3px 0;
+    }
+    .price {
+      padding: 3px 0 3px 0;
+    }
+  }
+}
