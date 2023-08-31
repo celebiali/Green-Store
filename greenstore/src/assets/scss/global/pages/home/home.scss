@@ -1,11 +1,20 @@
 .home {
-
-  max-width: 60rem;
-align-items: center;
-  justify-content: center;
-  .product-card {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  .shop {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .product-card {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-left: 1rem;
   }
 }

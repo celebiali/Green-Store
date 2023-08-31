@@ -16,7 +16,7 @@ function Product({star,title,brand,price}:ProductProps) {
             <div className="product">
             <article className="star">
                 <AiOutlineStar/>
-                { star }
+                {star}
             </article>
                 <article className="title">
                 {title}

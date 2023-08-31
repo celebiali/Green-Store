@@ -1,14 +1,19 @@
+//Helper
 @import "scss/helper/formalize";
 @import "scss/helper/global";
 @import "scss/helper/normalize";
-//
+//Config
 @import "scss/config/mixin";
 @import "scss/config/variables";
-//
+//Global
 @import "scss/global/header/header";
 @import "scss/global/footer/footer";
 @import "scss/global/pages/contact/contact";
-@import "scss/global/components/product";
 @import "scss/global/pages/home/home";
+//Components
+@import "scss/global/components/product";
+@import "scss/global/components/button";
+@import "scss/global/components/comments";
+@import "scss/global/components/information";
 
 

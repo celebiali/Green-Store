@@ -1,7 +1,9 @@
 .product-section {
-  width: 18rem;
   height: 27rem;
   background-color: gray;
+  width: calc(33.33% - 1rem);
+  margin-bottom: 1rem;
+  margin-right: 11px;
   .img {
     width: 18rem;
     height: 20rem;
