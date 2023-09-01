@@ -1,6 +1,7 @@
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 import Product from "../../components/product/Product.tsx";
+import Information from "../../components/information/Information.tsx";
 
 function Home() {
     const {t} = useTranslation()
@@ -31,7 +32,11 @@ function Home() {
             </div>
             <div>
             <h3>What Our Customers Say</h3><hr/>
-                
+            </div>
+            <div className="information">
+                <Information iconType="fa" title="SECURE PAYMENT" info="Curabitur interdum, nisl at tincidunt." />
+                <Information iconType="fi" title="DELIVERED WITH CARE" info="Donec sit amet neque id nisl." />
+                <Information iconType="ai" title="EXCELLENT SERVICE" info="Amet neque id nisl ullamcorper." />
             </div>
         </div>
     );

@@ -1,17 +1,21 @@
+
+import IconComponent from '../icons/IconComponent.tsx';
 interface InformationProps{
-    icon: string;
+    iconType: 'fa' | 'fi' | 'ai';
     title: string;
     info: string;
 }
 
-function Information({icon,title,info}:InformationProps) {
+function Information({iconType,title,info}:InformationProps) {
     return (
         <>
-            <button>
-               <title>{icon}</title>
-                <title>{title}</title>
-                <title>{info}</title>
-            </button>
+            <div className="container">
+                <span className="icon"><IconComponent iconType={iconType}/></span>
+                <div className="text">
+                    <h6>{title.toUpperCase()}</h6>
+                    <p>{info}</p>
+                </div>
+            </div>
         </>
     )
 }

@@ -11,7 +11,7 @@ function Footer() {
     return (
         <>
          <div className="footer">
-             <div className="navbar-menu">
+             <div className="footer-menu">
                  {type === "app" && <NavbarMenu menu={NAVBAR_MENU}/>}
              </div>
                  <div className="section">
