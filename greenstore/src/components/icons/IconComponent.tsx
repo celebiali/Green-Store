@@ -1,20 +1,20 @@
 // @ts-ignore
 import { FaLock } from 'react-icons/fa';
 // @ts-ignore
-import { FaClock } from 'react-icons/fa';
+import { AiFillCar } from 'react-icons/ai';
 // @ts-ignore
-import { FaUnlockAlt } from 'react-icons/fa';
+import { CgCardHearts } from 'react-icons/cg';
 interface IconComponentProps{
-    iconType: 'fa' | 'fi' | 'ai';
+    iconType: 'fa' | 'ai' | 'cg';
 }
 export default function IconComponent({iconType}: IconComponentProps) {
    switch (iconType){
        case "fa":
            return <FaLock/>;
-       case 'fi':
-           return <FaClock />;
        case 'ai':
-           return <FaUnlockAlt />;
+           return <AiFillCar />;
+       case 'cg':
+           return <CgCardHearts />;
        default:
            return null;
    }

@@ -2,6 +2,7 @@ import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 import Product from "../../components/product/Product.tsx";
 import Information from "../../components/information/Information.tsx";
+import Comments from "../../components/comments/Comments.tsx";
 
 function Home() {
     const {t} = useTranslation()
@@ -32,11 +33,20 @@ function Home() {
             </div>
             <div>
             <h3>What Our Customers Say</h3><hr/>
+                <Comments title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit." username="JENNIFER LEWIS"/>
+                <Comments title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit."  username="ALICIA HEART"/>
+                <Comments title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit."  username="JUAN CARLOS"/>
             </div>
             <div className="information">
                 <Information iconType="fa" title="SECURE PAYMENT" info="Curabitur interdum, nisl at tincidunt." />
-                <Information iconType="fi" title="DELIVERED WITH CARE" info="Donec sit amet neque id nisl." />
-                <Information iconType="ai" title="EXCELLENT SERVICE" info="Amet neque id nisl ullamcorper." />
+                <svg width="1" height="60">
+                    <line x1="0" y1="0" x2="0" y2="100" stroke="#000" stroke-width="1" />
+                </svg>
+                <Information iconType="ai" title="DELIVERED WITH CARE" info="Donec sit amet neque id nisl." />
+                <svg width="1" height="60">
+                    <line x1="0" y1="0" x2="0" y2="100" stroke="#000" stroke-width="1" />
+                </svg>
+                <Information iconType="cg" title="EXCELLENT SERVICE" info="Amet neque id nisl ullamcorper." />
             </div>
         </div>
     );
