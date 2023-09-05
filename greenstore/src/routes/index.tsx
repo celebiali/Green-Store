@@ -29,7 +29,8 @@ const routes = createBrowserRouter([
             },
 
         ]
-    },{
+    },
+    {
         path: '*',
         element: <Page404/>
     }
