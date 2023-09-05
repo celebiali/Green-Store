@@ -1,11 +1,7 @@
 import { AiOutlineStar } from "react-icons/ai"
-interface ProductProps {
-    star: string;
-    title: string;
-    brand: string;
-    price: string;
-}
-function Product({star,title,brand,price}:ProductProps) {
+import ProductDto from "../../models/components/ProductDto.ts";
+
+function Product({star,title,brand,price}:ProductDto) {
     return (
         <section className="product-section">
             <div className="img">

@@ -1,12 +1,9 @@
 
 import IconComponent from '../icons/IconComponent.tsx';
-interface InformationProps{
-    iconType: 'fa' | 'ai' | 'cg';
-    title: string;
-    info: string;
-}
+import InformationDto from "../../models/components/InformationDto.ts";
 
-function Information({iconType,title,info}:InformationProps) {
+
+function Information({iconType,title,info}:InformationDto) {
     return (
         <>
             <div className="container">

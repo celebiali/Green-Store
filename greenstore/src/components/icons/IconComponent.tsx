@@ -4,10 +4,8 @@ import { FaLock } from 'react-icons/fa';
 import { AiFillCar } from 'react-icons/ai';
 // @ts-ignore
 import { CgCardHearts } from 'react-icons/cg';
-interface IconComponentProps{
-    iconType: 'fa' | 'ai' | 'cg';
-}
-export default function IconComponent({iconType}: IconComponentProps) {
+import IconDto from "../../models/components/IconDto.ts"
+export default function IconComponent({iconType}: IconDto) {
    switch (iconType){
        case "fa":
            return <FaLock/>;

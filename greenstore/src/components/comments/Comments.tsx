@@ -2,13 +2,9 @@ import {BiSolidQuoteAltLeft} from "react-icons/bi";
 import img from '../../../public/images/plants-store-testimonial-avatar-img.jpg'
 import img1 from '../../../public/images/plants-store-testimonials-avatar-img-1.jpg'
 import img2 from '../../../public/images/plants-store-testimonials-avatar-img-2.jpg'
+import CommentsDto from "../../models/components/CommentsDto.ts"
 
-interface CommentsProps{
-    title: string
-    imageUrl: string;
-    username: string;
-}
-function Comments({title,imageUrl,username}:CommentsProps) {
+function Comments({title,imageUrl,username}:CommentsDto) {
 
     switch (imageUrl) {
         case  img:

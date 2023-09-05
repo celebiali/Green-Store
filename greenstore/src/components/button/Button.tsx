@@ -1,8 +1,6 @@
-interface ButtonProps{
-    title: string
-}
+import ButtonDto from "../../models/components/ButtonDto.ts";
 
-export default function Button({title}:ButtonProps){
+export default function Button({title}:ButtonDto){
     return (
         <>
             <button>
