@@ -10,7 +10,7 @@ export const NAVBAR_MENU = [
         path: '/about',
         title: {
             en: 'About',
-            tr: 'Hakkında',
+            tr: 'Hakkımda',
         }
     },
     {
