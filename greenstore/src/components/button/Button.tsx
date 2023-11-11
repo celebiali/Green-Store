@@ -1,12 +1,7 @@
-import ButtonDto from "../../models/components/ButtonDto.ts";
+import ButtonDto from "../../models/components/ButtonDto";
 
-export default function Button({title}:ButtonDto){
-    return (
-        <>
-            <button>
-               <title>{title}</title>
-            </button>
-        </>
-    )
-}
+const Button = (props: ButtonDto) => {
+  return <button>{props.title}</button>;
+};
 
+export default Button;

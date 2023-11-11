@@ -1,16 +1,16 @@
-import { Helmet } from "react-helmet";
-import { useTranslation } from "react-i18next";
-import Product from "../../components/product/Product.tsx";
-import Information from "../../components/information/Information.tsx";
-import Comments from "../../components/comments/Comments.tsx";
+import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
+import Product from '../../components/product/Product.tsx'
+import Information from '../../components/information/Information.tsx'
+import Comments from '../../components/comments/Comments.tsx'
 
 function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div className="home">
       <Helmet>
-        <title> {t("navbar.home")}</title>
+        <title> {t('navbar.home')}</title>
       </Helmet>
       <div className="shop">
         <h3>New Plants</h3>
@@ -43,14 +43,17 @@ function Home() {
         <Comments
           title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit."
           username="JENNIFER LEWIS"
+          imageUrl={''}
         />
         <Comments
           title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit."
           username="ALICIA HEART"
+          imageUrl={''}
         />
         <Comments
           title="Sed odio donec curabitur auctor amet tincidunt non odio enim felis tincidunt amet morbi egestas hendrerit."
           username="JUAN CARLOS"
+          imageUrl={''}
         />
       </div>
       <div className="information">
@@ -77,6 +80,6 @@ function Home() {
         />
       </div>
     </div>
-  );
+  )
 }
-export default Home;
+export default Home

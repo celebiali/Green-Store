@@ -4,6 +4,7 @@ import { useNavbarType } from "../../stores/App/hooks.ts";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { CiFacebook } from "react-icons/ci";
 import { TfiTwitter } from "react-icons/tfi";
+import Button from "../../components/button/Button";
 
 function Footer() {
   const type = useNavbarType();
@@ -16,13 +17,21 @@ function Footer() {
         </div>
         <div className="section">
           <h4>Subscribe to our newsletter</h4>
-          <input placeholder="Your email address.." />
-          <button>Subscribe</button>
+          <span>
+            <input placeholder="Your email address.." />
+            <Button title="Subscribe" ></Button>
+          </span>
         </div>
         <div className="icons">
-          <AiOutlineInstagram />
-          <CiFacebook />
-          <TfiTwitter />
+          <span>
+            <AiOutlineInstagram />
+          </span>
+          <span>
+            <CiFacebook />
+          </span>
+          <span>
+            <TfiTwitter />
+          </span>
         </div>
         <div className="footer_end">
           <span>
