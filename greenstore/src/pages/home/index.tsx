@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Product from "../../components/product/Product.tsx";
 import Information from "../../components/information/Information.tsx";
 import Comments from "../../components/comments/Comments.tsx";
+import Button from "../../components/button/Button";
 
 function Home() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ function Home() {
       </Helmet>
       <div className="shop">
         <h3>New Plants</h3>
-        <button>Shop Now</button>
+        <Button title="Shop Now"></Button>
       </div>
       <div className="product-card">
         <Product title="Title" price="$123" brand="Brand" star="xxxx" />

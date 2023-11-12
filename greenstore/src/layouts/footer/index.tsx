@@ -33,6 +33,17 @@ function Footer() {
             <TfiTwitter />
           </span>
         </div>
+        <div style={{ width: "100%" }}>
+          <hr
+            style={{
+              color: "$color-gray",
+              width: "100%",
+              height: "1px",
+              borderBottom: "none",
+              opacity: 0.5,
+            }}
+          />
+        </div>
         <div className="footer_end">
           <span>
             <p>© 2023 Plant Shop. Powered by Plant Shop.</p>
