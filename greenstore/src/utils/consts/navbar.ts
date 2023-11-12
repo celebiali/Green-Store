@@ -1,31 +1,30 @@
 export const NAVBAR_MENU = [
-    {
-        path: '/',
-        title: {
-            en: 'Home',
-            tr: 'Ana Sayfa',
-        }
+  {
+    path: "/",
+    title: {
+      en: "Home",
+      tr: "Ana Sayfa",
     },
-    {
-        path: '/about',
-        title: {
-            en: 'About',
-            tr: 'Hakkımda',
-        }
+  },
+  {
+    path: "/about",
+    title: {
+      en: "About",
+      tr: "Hakkımızda",
     },
-    {
-        path: '/contact',
-        title: {
-            en: 'Contact',
-            tr: 'İletişim',
-        }
-
+  },
+  {
+    path: "/contact",
+    title: {
+      en: "Contact",
+      tr: "İletişim",
     },
-    {
-        path: '/plants',
-        title: {
-            en: 'Plants',
-            tr: 'Bitkiler',
-        }
+  },
+  {
+    path: "/plants",
+    title: {
+      en: "Plants",
+      tr: "Bitkiler",
     },
-]
+  },
+];

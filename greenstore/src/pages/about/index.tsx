@@ -7,7 +7,9 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title> {t("navbar.about")}</title>
+        <title>
+          {t("navbar.green-store")} - {t("navbar.about")}
+        </title>
       </Helmet>
       <div>
         <h1>About</h1>
