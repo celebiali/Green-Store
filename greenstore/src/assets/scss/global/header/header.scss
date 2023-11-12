@@ -9,7 +9,7 @@
     border-bottom: 1px solid #e5dddd;
     .logo {
       a {
-        font-family: "DM Sans",sans-serif;
+        font-family: "DM Sans", sans-serif;
         line-height: 1.5rem;
         vertical-align: middle;
         color: $color-black;
@@ -26,8 +26,7 @@
       display: flex;
       justify-content: space-between;
       a {
-        font-family: "DM Sans",sans-serif;
-        line-height: 96px;
+        font-family: "DM Sans", sans-serif;
         padding-right: 20px;
         background-color: white;
         color: $color-black;
@@ -41,8 +40,8 @@
     }
   }
   .language-select {
-      border: none;
-      outline: none;
-      scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
   }
 }
