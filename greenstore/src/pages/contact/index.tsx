@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
   const { t } = useTranslation();
@@ -20,7 +21,9 @@ function Contact() {
           </div>
           <div>
             <div>
-              <h4>İcon + VISIT US</h4>
+              <h4>
+                <FaMapMarkerAlt className="custom-marker" /> <span className="icon-title">VISIT US</span>
+              </h4>
               <label>123 Demo St, San Francisco, CA 45678, United States</label>
             </div>
             <div>

@@ -9,6 +9,9 @@
     border-bottom: 1px solid #e5dddd;
     .logo {
       a {
+        font-family: "DM Sans",sans-serif;
+        line-height: 1.5rem;
+        vertical-align: middle;
         color: $color-black;
         background-color: white;
         text-decoration: none;
@@ -23,6 +26,8 @@
       display: flex;
       justify-content: space-between;
       a {
+        font-family: "DM Sans",sans-serif;
+        line-height: 96px;
         padding-right: 20px;
         background-color: white;
         color: $color-black;

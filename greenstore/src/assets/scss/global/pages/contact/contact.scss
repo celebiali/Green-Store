@@ -3,10 +3,37 @@
   align-items: center;
   justify-content: center;
   .left-contact {
-    width: 20rem;
+    width: 40%;
+    h1 {
+      font-family: $font-family;
+      font-size: 4.5rem;
+      line-height: 4.7rem;
+        }
     hr {
       margin-left: 12px;
       margin-right: 12px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-family: $font-family;
+      color: $color-gray;
+      font-weight: normal;
+    }
+    h4 {
+      .custom-marker {
+        color: $color-green;
+      }
+      .icon-title {
+        text-transform: uppercase;
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-family: $font-family;
+      }
     }
     .follow-us {
       margin-left: 12px;
@@ -15,9 +42,9 @@
         div:nth-child(1) {
           margin-right: 10px;
         }
-       div:not(:first-child) {
-        margin: 0 10px;
-      }
+        div:not(:first-child) {
+          margin: 0 10px;
+        }
       }
     }
   }
@@ -29,6 +56,6 @@
     width: 1px;
   }
   .right-contact {
-    width: 20rem;
+    width: 40%;
   }
 }

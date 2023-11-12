@@ -16,7 +16,7 @@ function Navbar() {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <Link to="/">Green Store</Link>
+          <Link to="/">Greenstore</Link>
         </div>
         <div className="menu">
           <div>{type === "app" && <NavbarMenu menu={NAVBAR_MENU} />}</div>

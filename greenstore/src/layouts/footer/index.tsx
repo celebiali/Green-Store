@@ -19,7 +19,7 @@ function Footer() {
           <h4>Subscribe to our newsletter</h4>
           <span>
             <input placeholder="Your email address.." />
-            <Button title="Subscribe" ></Button>
+            <Button title="Subscribe"></Button>
           </span>
         </div>
         <div className="icons">
