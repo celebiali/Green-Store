@@ -4,6 +4,7 @@ import { AiFillPhone, AiFillYoutube, AiOutlineInstagram } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFacebook, BsPinterest } from "react-icons/bs";
+import Button from "../../components/button/Button";
 function Contact() {
   const { t } = useTranslation();
 
@@ -63,23 +64,29 @@ function Contact() {
           <hr className="hr" />
         </div>
         <div className="right-contact">
-          <div>
+          <div className="form">
             <h3> Drop us a line or two</h3>
           </div>
           <div className="input-container">
-            <label>Name*</label>
+            <label>
+              Name<span className="stars">*</span>
+            </label>
             <input placeholder="Full Name" />
           </div>
           <div className="input-container">
-            <label>Email* </label>
+            <label>
+              Email<span className="stars">*</span>
+            </label>
             <input placeholder="Email Address" />
           </div>
           <div className="input-container">
-            <label>Comment or Message* </label>
-            <input placeholder="Your message" />
+            <label>
+              Comment or Message<span className="stars">*</span>
+            </label>
+            <textarea placeholder="Your message" />
           </div>
-          <div>
-            <button>Submit</button>
+          <div className="form">
+            <Button title="Submit"></Button>
           </div>
         </div>
       </div>
