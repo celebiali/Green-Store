@@ -5,14 +5,21 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="about_container">
       <Helmet>
         <title>
-          {t("navbar.green-store")} - {t("navbar.about")}
+          {t("navbar.about")} - {t("navbar.green-store")}
         </title>
       </Helmet>
       <div>
-        <h1>About</h1>
+        <div className="about_title">
+          <h1>About</h1>
+        </div>
+        <div>
+          <hr />
+        </div>
+      </div>
+      <div>
         <h3>We provide fresh and healthy plants for your space</h3>
         <p>
           Tincidunt ut pellentesque arcu molestie dolor, nunc feugiat sit mauris
