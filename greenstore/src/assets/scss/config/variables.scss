@@ -12,3 +12,21 @@ $color-gray: #4d4f48;
 $color-icon: #abaca9;
 //
 $font-family: "Unna", serif;
+//
+::selection {
+  background-color: #c6d8c0;
+  color: #000;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #5c9735;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: $color-gray;
+}

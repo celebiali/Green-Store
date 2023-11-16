@@ -1,0 +1,48 @@
+.comments_components {
+  display: flex;
+  flex-direction: column;
+  .icon {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-soft-green;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 900;
+  }
+  .title {
+    padding: 1rem 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: center;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 3rem;
+      object-fit: cover;
+    }
+  }
+  .username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    span {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 18px;
+      color: $color-gray;
+    }
+  }
+}

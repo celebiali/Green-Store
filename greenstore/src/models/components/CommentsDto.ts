@@ -1,6 +1,6 @@
 interface CommentsDto{
     title: string
-    imageUrl: string;
+    src: string;
     username: string;
 }
 

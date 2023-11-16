@@ -4,7 +4,7 @@
   justify-content: center;
   .left-contact {
     width: 40%;
-    h1{
+    h1 {
       font-family: $font-family;
       font-size: 4.5rem;
       line-height: 4.7rem;
@@ -139,11 +139,6 @@
         height: 8rem;
         padding-left: 10px;
         padding-top: 10px;
-      }
-      input:focus,
-      textarea:focus {
-        border: 1px solid $color-green;
-        outline: none;
       }
     }
     .form {

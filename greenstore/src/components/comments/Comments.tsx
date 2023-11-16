@@ -1,38 +1,41 @@
-import {BiSolidQuoteAltLeft} from "react-icons/bi";
-import img from '../../../public/images/plants-store-testimonial-avatar-img.jpg'
-import img1 from '../../../public/images/plants-store-testimonials-avatar-img-1.jpg'
-import img2 from '../../../public/images/plants-store-testimonials-avatar-img-2.jpg'
-import CommentsDto from "../../models/components/CommentsDto.ts"
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import img from "../../../public/images/comments1.jpg";
+import img1 from "../../../public/images/comments2.jpg";
+import img2 from "../../../public/images/comments3.jpg";
+import CommentsDto from "../../models/components/CommentsDto.ts";
 
-function Comments({title,imageUrl,username}:CommentsDto) {
+function Comments({ title, src, username }: CommentsDto) {
+  let selectedImage;
 
-    switch (imageUrl) {
-        case  img:
-            imageUrl = img
-            break
-        case img1:
-            imageUrl = img1
-            break
-        case img2:
-            imageUrl = img2
-            break
-    }
-    return (
-        <>
-            <div>
-                <BiSolidQuoteAltLeft/>
-            </div>
-            <div>
-                <img src={imageUrl} alt={title} />
-            </div>
-            <div>
-                {title}
-            </div>
-            <div>
-                {username}
-            </div>
-        </>
-    );
+  switch (src) {
+    case "img":
+      selectedImage = img;
+      break;
+    case "img1":
+      selectedImage = img1;
+      break;
+    case "img2":
+      selectedImage = img2;
+      break;
+    default:
+      selectedImage = img1;
+      break;
+  }
+
+  return (
+    <div className="comments_components">
+      <div className="icon">
+        <BiSolidQuoteAltLeft />
+      </div>
+      <div className="title">{title}</div>
+      <div className="img">
+        <img src={selectedImage} alt={title} />
+      </div>
+      <div className="username">
+        <span>{username}</span>
+      </div>
+    </div>
+  );
 }
 
 export default Comments;

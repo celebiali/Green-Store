@@ -87,8 +87,87 @@ function About() {
             </div>
           </div>
         </div>
-
         <div></div>
+      </div>
+
+      <div className="image_container">
+        <div className="image">
+          <img
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-6.jpg"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-6.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-6-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-6-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-6-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
+        <div className="image">
+          <img
+            loading="lazy"
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-1.jpg"
+            alt=""
+            decoding="async"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-1.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-1-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-1-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-1-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
+        <div className="image">
+          <img
+            loading="lazy"
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-2.jpg"
+            alt=""
+            decoding="async"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-2.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-2-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-2-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-2-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
+      </div>
+      <div className="image_container">
+        <div className="image">
+          <img
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-3.jpg"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            loading="lazy"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-3.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-3-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-3-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-3-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
+        <div className="image">
+          <img
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-4.jpg"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            loading="lazy"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-4.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-4-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-4-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-4-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
+        <div className="image">
+          <img
+            width="380"
+            height="400"
+            src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-5.jpg"
+            class="attachment-full size-full"
+            alt=""
+            decoding="async"
+            loading="lazy"
+            srcset="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-5.jpg 400w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-5-300x300.jpg 300w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-5-150x150.jpg 150w, https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/plants-store-gallery-img-5-100x100.jpg 100w"
+            sizes="(max-width: 400px) 100vw, 400px"
+          />
+        </div>
       </div>
     </div>
   );
