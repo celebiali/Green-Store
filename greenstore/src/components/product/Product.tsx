@@ -1,31 +1,26 @@
-import { AiOutlineStar } from "react-icons/ai"
+import { AiOutlineStar } from "react-icons/ai";
 import ProductDto from "../../models/components/ProductDto.ts";
 
-function Product({star,title,brand,price}:ProductDto) {
-    return (
-        <section className="product-section">
-            <div className="img">
-            <article >
-                <img alt="product"></img>
-            </article>
-            </div>
-            <div className="product">
-            <article className="star">
-                <AiOutlineStar/>
-                {star}
-            </article>
-                <article className="title">
-                {title}
-            </article>
-                <article className="brand">
-                 {brand}
-            </article>
-                <article className="price">
-                {price}
-            </article>
-            </div>
-        </section>
-    );
+function Product({ star, title, brand, price }: ProductDto) {
+  return (
+    <section className="product-section">
+      <div className="img">
+        <img src="../../../public/images/product.jpeg" alt="img" />
+      </div>
+      <div className="product">
+        <div className="star">
+          <AiOutlineStar />
+          <AiOutlineStar />
+          <AiOutlineStar />
+          <AiOutlineStar />
+          <AiOutlineStar />
+        </div>
+        <div className="title">{title}</div>
+        <div className="brand">{brand}</div>
+        <div className="price">{price}</div>
+      </div>
+    </section>
+  );
 }
 
 export default Product;

@@ -29,7 +29,9 @@ function Home() {
       </div>
       <div className="our-story">
         <div className="our-story_img">
-          <img src="" alt="" />
+          <div className="img">
+            <img src="../../../public/images/pexels-photo.jpg" alt="img" />
+          </div>
         </div>
         <div className="our-story_description">
           <span>OUR STORY</span>
