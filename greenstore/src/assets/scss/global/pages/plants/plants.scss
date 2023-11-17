@@ -1,0 +1,55 @@
+.plants_container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-plant;
+  padding: 3rem 0;
+
+  .plants_products {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-bottom: 8rem;
+    .plants {
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 3rem;
+
+      .breadcrump {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14.72px;
+        line-height: 25.6px;
+        color: #777;
+      }
+      .product_filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+        .product_filter_text {
+          font-family: "DM Sans", sans-serif;
+          font-size: 1rem;
+          line-height: 1rem;
+          color: $color-gray;
+        }
+
+        .product_filter_select {
+          font-family: "DM Sans", sans-serif;
+          font-size: 1rem;
+          line-height: 1rem;
+          color: #666;
+        }
+      }
+      .product-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -7rem;
+        .product-card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
