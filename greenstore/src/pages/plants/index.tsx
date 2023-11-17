@@ -18,16 +18,12 @@ function Plants() {
             <div className="product_filter_text">Showing 1–9 of 25 results</div>
             <div className="product_filter_select">Default sorting ^</div>
           </div>
-          <div className="product-container">
+          <div className="product_container">
             <div className="product_card">
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-            </div>
-            <div className="product_card">
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-            </div>
-            <div className="product_card">
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
               <Product title="Title" price="$123" brand="Brand" star="xxxx" />
             </div>
