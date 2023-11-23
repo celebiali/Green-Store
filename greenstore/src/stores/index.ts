@@ -1,9 +1,11 @@
 import { configureStore} from "@reduxjs/toolkit";
 import app from "./App"
+import modal from "./Modal";
 
 const store = configureStore({
     reducer : {
-        app
+        app,
+        modal
     }
 })
 

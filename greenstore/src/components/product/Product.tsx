@@ -1,7 +1,7 @@
 import { AiOutlineStar } from "react-icons/ai";
 import ProductDto from "../../models/components/ProductDto.ts";
 
-function Product({ star, title, brand, price }: ProductDto) {
+function Product({ title, brand, price }: ProductDto) {
   return (
     <section className="product-section">
       <div className="img">

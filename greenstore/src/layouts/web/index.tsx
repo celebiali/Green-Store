@@ -5,9 +5,14 @@ import Navbar from "../navbar";
 import Footer from "../footer";
 import { Outlet } from "react-router-dom";
 import OfflineMessage from "../../components/OfflineMessage.tsx";
+import { useModals } from "../../stores/Modal/hooks";
 
 function WebLayout() {
   const [isInternetConnected, setInternetConnected] = useState(true);
+  const modals = useModals();
+
+  console.log(modals, "modals");
+
   return (
     <div>
       <InternetConnectionStatus setInternetConnected={setInternetConnected} />

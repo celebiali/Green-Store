@@ -20,12 +20,12 @@ function Home() {
         <Button title="Shop Now"></Button>
       </div>
       <div className="product-card">
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-        <Product title="Title" price="$123" brand="Brand" star="xxxx" />
+        <Product title="Title" price="$123" brand="Brand" />
+        <Product title="Title" price="$123" brand="Brand" />
+        <Product title="Title" price="$123" brand="Brand" />
+        <Product title="Title" price="$123" brand="Brand" />
+        <Product title="Title" price="$123" brand="Brand" />
+        <Product title="Title" price="$123" brand="Brand" />
       </div>
       <div className="our-story">
         <div className="our-story_img">
