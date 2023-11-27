@@ -8,14 +8,12 @@ import { Menu } from "@headlessui/react";
 import { languages } from "../../utils/consts/appearance.tsx";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../../components/LanguageSelect.tsx";
-import { modal } from "../../stores/Modal/actions";
-import { useModals } from "../../stores/Modal/hooks";
+import { createModal } from "../../stores/Modals/actions";
 
 function Navbar() {
   const type = useNavbarType();
   const { i18n } = useTranslation();
-  const modals = useModals();
-  console.log(modals, "modals");
+
 
   return (
     <header className="header">
@@ -31,13 +29,8 @@ function Navbar() {
             </Link>
             <Link to="/">
               <span
-                onClick={(e) => {
-                  if (modals.length > 0) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                  } else {
-                    modal.append("login");
-                  }
+                onClick={() => {
+                  createModal("login");
                 }}
               >
                 <SlUser />
