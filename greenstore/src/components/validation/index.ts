@@ -1,1 +1,1 @@
-export {loginSchema} from '.';
+export {loginSchema} from '../validation/auth/login';

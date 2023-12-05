@@ -1,5 +1,5 @@
-import Login from "../auth/login/Login";
-import Register from "../auth/register/Register";
+import Login from "../auth/login/index.tsx";
+import Register from "../auth/register/index.tsx";
 
 export const modalData = [
   {
