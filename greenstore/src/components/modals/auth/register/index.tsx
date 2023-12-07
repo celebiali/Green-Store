@@ -1,5 +1,8 @@
 import { createModal, destroyModal } from "../../../../stores/Modals/actions";
-
+import {Formik,Form} from "formik";
+import Input from "../../../input";
+import Button from "../../../button/Button.tsx";
+import {registerSchema} from "../../../validation";
 export default function Register() {
   return (
     <div className="register_modal">
@@ -9,45 +12,20 @@ export default function Register() {
       </div>
       <hr />
       <div className="container">
-        <div>
-          <label>Kullanıcı Adı</label>
-        </div>
-        <div style={{ marginTop: 5 }}>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            required
-            className="username_input"
-          />
-        </div>
-        <div style={{ marginTop: 20 }}>
-          <label>E-Posta Adresi </label>
-        </div>
-        <div style={{ marginTop: 5 }}>
-          <input
-            type="text"
-            placeholder="Enter E-Mail"
-            required
-            className="email_input"
-          />
-        </div>
-        <div style={{ marginTop: 20 }}>
-          <label>Password</label>
-        </div>
-        <div style={{ marginTop: 5 }}>
-          <input
-            type="text"
-            placeholder="Password"
-            name="uname"
-            required
-            className="password_input"
-          />
-        </div>
-        <div style={{ marginTop: 10, marginBottom: 20 }}>
-          <button type="submit" style={{ marginLeft: 0 }}>
-            Kayıt Ol
-          </button>
-        </div>
+        <Formik
+            validationSchema={registerSchema}
+            initialValues={{
+              username:'',
+              email:'',
+              password:''
+            }}
+        >
+           <Form><Input label="Kullanıcı Adı" name="username" className="username_input"/>
+          <Input label="Email" name="email" className="email_input"/>
+          <Input label="Parola" name="password" className="password_input"/>
+         <Button title="Kayıt Ol" type="submit"></Button>
+          </Form>
+        </Formik>
         <hr />
         <div className="isUser">
           <span>Hesabın var mı?</span>

@@ -30,7 +30,7 @@ function Navbar() {
             <Link to="/">
               <span
                 onClick={() => {
-                  createModal("login");
+                  createModal("register");
                 }}
               >
                 <SlUser />
