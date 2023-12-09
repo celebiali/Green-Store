@@ -26,6 +26,7 @@ function Navbar() {
           <div className="icons">
             <Link to="/">
               <SlBag />
+    <div className="cart-count">0</div>
             </Link>
             <Link to="/">
               <span

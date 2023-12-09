@@ -1,7 +1,17 @@
 import { AiOutlineStar } from "react-icons/ai";
 import ProductDto from "../../models/components/ProductDto.ts";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../stores/Products";
 
 function Product({ title, brand, price }: ProductDto) {
+  const dispatch = useDispatch<AppDispatch>();
+  const { products, loading } = useSelector((state: any) => state.products);
+  useEffect(() => {
+    dispatch(getProducts());
+  }, [dispatch]);
+  console.log(products, loading, "products");
+
   return (
     <section className="product-section">
       <div className="img">

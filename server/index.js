@@ -10,7 +10,6 @@ const cloudinary = require("cloudinary").v2;
 
 dotenv.config();
 
-
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
@@ -27,7 +26,7 @@ app.use("/", product);
 app.use("/", user);
 db();
 
-const PORT = process.env.PORT || 4000;
+const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
