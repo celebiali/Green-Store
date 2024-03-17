@@ -12,7 +12,6 @@ function WebLayout() {
   const [isInternetConnected, setInternetConnected] = useState(true);
   const modals = useModals();
 
-  console.log(modals, "modals");
 
   return (
     <div>

@@ -20,12 +20,7 @@ function Plants() {
           </div>
           <div className="product_container">
             <div className="product_card">
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
-              <Product title="Title" price="$123" brand="Brand" star="xxxx" />
+              <Product   /> 
             </div>
           </div>
         </div>

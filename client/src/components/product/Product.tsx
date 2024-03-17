@@ -3,33 +3,36 @@ import ProductDto from "../../models/components/ProductDto.ts";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../stores/Products";
+import { useNavigate } from 'react-router-dom';
+
 
 function Product({ title, brand, price }: ProductDto) {
   const dispatch = useDispatch<AppDispatch>();
+    const history = useNavigate();
+
   const { products, loading } = useSelector((state: any) => state.products);
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
-  console.log(products, loading, "products");
-
+ 
   return (
-    <section className="product-section">
+    <>
+      {loading && <div>Loading...</div>}
+      {products.map((product: any) => (
+        <section onClick={() =>  history(`/plants/${product._id}`)} className="product-section" key={product._id}>
       <div className="img">
         <img src="../../../public/images/product.jpeg" alt="img" />
       </div>
-      <div className="product">
-        <div className="star">
-          <AiOutlineStar />
-          <AiOutlineStar />
-          <AiOutlineStar />
-          <AiOutlineStar />
-          <AiOutlineStar />
-        </div>
-        <div className="title">{title}</div>
-        <div className="brand">{brand}</div>
-        <div className="price">{price}</div>
+      <div className="product"> 
+        <div className="title">{product.category}</div>
+        <div className="brand">{product.name}</div>
+        <div className="price">{product.description}</div>
+        <div className="price">{product.price}</div>
+
       </div>
     </section>
+      ))}
+    </>
   );
 }
 

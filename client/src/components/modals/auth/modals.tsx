@@ -7,7 +7,6 @@ export default function Modals() {
     <div className="modal">
       {modals.map((modal) => {
         const m = modalData.find((m: any) => m.name === modal.name);
-        console.log(modal, "modal");
         return (
           <div className="modal_components">
             <m.element />

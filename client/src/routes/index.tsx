@@ -5,7 +5,7 @@ import About from "../pages/about";
 import Contact from "../pages/contact";
 import Plants from "../pages/plants";
 import Index from "../pages/404";
-
+import Details from "../layouts/details";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +26,14 @@ const routes = createBrowserRouter([
       {
         path: "/plants",
         element: <Plants />,
+      }, 
+       {
+        path: "/plants/:id",  
+        element: <Details />,
+      },
+      {
+        path: "/home/:id",   
+        element: <Details />,
       },
     ],
   },
