@@ -1,7 +1,8 @@
 interface ProductDto {
   //star: string;
-  title: string;
-  brand: string;
+  category: string;
+  name: string;
+  description: string;
   price: string;
 }
 

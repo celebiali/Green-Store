@@ -1,4 +1,4 @@
-import { AiOutlineStar } from "react-icons/ai";
+//import { AiOutlineStar } from "react-icons/ai";
 import ProductDto from "../../models/components/ProductDto.ts";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,11 +6,12 @@ import { getProducts } from "../../stores/Products";
 import { useNavigate } from 'react-router-dom';
 
 
-function Product({ title, brand, price }: ProductDto) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function Product({ description, name, category,price }: ProductDto) {
   const dispatch = useDispatch<AppDispatch>();
     const history = useNavigate();
 
-  const { products, loading } = useSelector((state: any) => state.products);
+  const { products, loading } = useSelector((state) => state.products);
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
@@ -18,7 +19,7 @@ function Product({ title, brand, price }: ProductDto) {
   return (
     <>
       {loading && <div>Loading...</div>}
-      {products.map((product: any) => (
+      {products.map((product) => (
         <section onClick={() =>  history(`/plants/${product._id}`)} className="product-section" key={product._id}>
       <div className="img">
         <img src="../../../public/images/product.jpeg" alt="img" />
