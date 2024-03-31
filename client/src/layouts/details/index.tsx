@@ -44,6 +44,10 @@ export default function Detail() {
             </div>
           </div>
         </div>
+        <div className="details_description_reviews">
+          <span>Description</span>
+          <span className="reviews">Reviews (0)</span>
+        </div>
       </div>
     </div>
   );
