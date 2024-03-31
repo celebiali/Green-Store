@@ -1,6 +1,6 @@
-interface ButtonDto{
-    title: string
-    type: string
+interface ButtonDto {
+  type?: "button" | "submit" | "reset";
+  title: string;
 }
 
-export default ButtonDto
+export default ButtonDto;

@@ -1,28 +1,39 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
+// Define an interface for your product data
+interface Product {
+  id: number;
+  // Add other product properties here (name, description, price, etc.)
+}
+
 const initialState = {
-  products: [],
-  product: {},
+  products: [] as Product[], // Initialize with an empty array of products
+  product: {} as Product, // Initialize product as an empty object
   loading: false,
 };
 
-export const getProducts = createAsyncThunk("products", async () => {
+export const getProducts = createAsyncThunk<Product[]>("products", async () => {
   try {
     const response = await fetch("http://localhost:4000/products");
     return await response.json();
   } catch (error) {
     console.error("Fetch error:", error);
+    return Promise.reject(error); // Explicitly reject on error for type safety
   }
 });
 
-export const getProductDetail = createAsyncThunk(async (id) => {
-  try {
-    const response = await fetch("http://localhost:4000/products/" + id);
-    return await response.json();
-  } catch (error) {
-    console.error("Fetch error:", error);
+export const getProductDetail = createAsyncThunk<Product, number>(
+  "productDetail",
+  async (id: number) => {
+    try {
+      const response = await fetch("http://localhost:4000/products/" + id);
+      return await response.json();
+    } catch (error) {
+      console.error("Fetch error:", error);
+      return Promise.reject(error); // Explicitly reject on error for type safety
+    }
   }
-});
+);
 
 export const productSlice = createSlice({
   name: "product",
@@ -36,6 +47,9 @@ export const productSlice = createSlice({
       state.loading = false;
       state.products = action.payload;
     });
+    builder.addCase(getProducts.rejected, (state) => {
+      state.loading = false;
+    });
     builder.addCase(getProductDetail.pending, (state) => {
       state.loading = true;
     });
@@ -43,6 +57,7 @@ export const productSlice = createSlice({
       state.loading = false;
       state.product = action.payload;
     });
+    
   },
 });
 
