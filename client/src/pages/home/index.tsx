@@ -20,7 +20,7 @@ function Home() {
         <Button title="Shop Now"></Button>
       </div>
       <div className="product-card">
-        <Product /> 
+        <Product />
       </div>
       <div className="our-story">
         <div className="our-story_img">

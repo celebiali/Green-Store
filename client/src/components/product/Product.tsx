@@ -17,23 +17,24 @@ function Product({ description, name, category, price }: ProductDto) {
   return (
     <>
       {loading && <div>Loading...</div>}
-      {products.map((product) => (
-        <section
-          onClick={() => history(`/plants/${product._id}`)}
-          className="product-section"
-          key={product._id}
-        >
-          <div className="img">
-            <img src="../../../public/images/product.jpeg" alt="img" />
-          </div>
-          <div className="product">
-            <div className="title">{product.category}</div>
-            <div className="brand">{product.name}</div>
-            <div className="price">{product.description}</div>
-            <div className="price">{product.price}</div>
-          </div>
-        </section>
-      ))}
+      {products.length > 0 &&
+        products.map((product) => (
+          <section
+            onClick={() => history(`/plants/${product._id}`)}
+            className="product-section"
+            key={product._id}
+          >
+            <div className="img">
+              <img src="../../../public/images/product.jpeg" alt="img" />
+            </div>
+            <div className="product">
+              <div className="title">{product.category}</div>
+              <div className="brand">{product.name}</div>
+              <div className="price">{product.description}</div>
+              <div className="price">{product.price}</div>
+            </div>
+          </section>
+        ))}
     </>
   );
 }
