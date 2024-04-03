@@ -124,8 +124,7 @@ function About() {
             sizes="(max-width: 400px) 100vw, 400px"
           />
         </div>
-      </div>
-      <div className="image_container">
+
         <div className="image">
           <img
             width="380"
